@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('home', function () {
+Route::get('/', function () {
     return view('order');
 });
 Route::get('log', function () {
@@ -36,12 +36,12 @@ Route::post('logins',[OrderController::class,'login']);
 Route::get('dash',[OrderController::class,'dashboard']);
 
 
-Route::get('sendbasicemail',[MailController::class,'basic_email']);
-Route::get('sendhtmlemail',[MailController::class,'html_email']);
-Route::get('sendattachmentemail',[MailController::class,'attachment_email']);
-Route::get('sendmail',[MailController::class,'emails']);
+// Route::get('sendbasicemail',[MailController::class,'basic_email']);
+// Route::get('sendhtmlemail',[MailController::class,'html_email']);
+// Route::get('sendattachmentemail',[MailController::class,'attachment_email']);
+// Route::get('sendmail',[MailController::class,'emails']);
 
-Route::get('/email', [[MailController::class,'create']]);
-Route::post('/email', 'MailController@sendEmail')->name('send.email');
+// Route::get('/email', [[MailController::class,'create']]);
+// Route::post('/email', 'MailController@sendEmail')->name('send.email');
 
 
