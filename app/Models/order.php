@@ -17,5 +17,6 @@ class order extends Model
         'password',
         'nicno',
         'telephone'
+        'address'
     ];
 }
